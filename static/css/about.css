@@ -1,0 +1,457 @@
+.about {
+  text-align: center;
+  padding: 55px 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.about-logo {
+  margin-right: 60px;
+}
+
+.about-page {
+  min-height: 27.5em;
+  background-image: url('../img/about/about.png');
+}
+
+.about-page .wrapper-overlay {
+  min-height: 27.5em;
+}
+
+.about-clients-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-clients {
+  margin-bottom: 65px;
+}
+
+.estimate {
+  background-color: #f2f2f2;
+  font-size: 36px;
+  font-weight: 300;
+  padding: 50px 0;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 20px 0 45px;
+}
+
+.ad-placement {
+  background-color: #60b939;
+  color: #ffffff;
+  padding: 35px 0 5px;
+}
+
+.ad-placement-container,
+.estimate-container {
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+}
+
+.about-container .about-text-left {
+  text-align: left;
+}
+
+.about-img-right {
+  width: 100%;
+  max-width: 360px;
+}
+
+.about-text-left {
+  flex: 1;
+  padding: 0 35px;
+  margin-bottom: 10px;
+}
+
+.ad-big-text {
+  font-size: 30px;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.partnership {
+  display: flex;
+  align-items: center;
+  justify-align: center;
+  height: 335px;
+  background: url('../img/about/partnership.png') no-repeat 50% 50%;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.confidentiality {
+  background-color: #f2f2f2;
+  color: #323232;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 55px 0 85px;
+}
+
+.confidentiality-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 45px;
+  padding: 0 35px;
+}
+
+.confidentiality-list {
+  display: flex;
+  padding-left: 35px;
+}
+
+.confidentiality-item {
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding-left: 110px;
+  padding-right: 35px;
+}
+
+.eye-icon {
+  background: url('../img/about/eye.png') no-repeat 0% 0%;
+}
+
+.cup-icon {
+  background: url('../img/about/cup.png') no-repeat 0% 0%;
+}
+
+.legal-features-container {
+  display: flex;
+  align-items: center;
+  color: #323232;
+}
+
+.legal-features-caption {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.legal-features p {
+  margin: 0;
+}
+
+.legal-features-text {
+  flex: 1;
+  font-weight: 300;
+  font-size: 26px;
+  text-align: right;
+  margin-top: 25px;
+}
+
+.legal-features-img {
+  flex: 1 1 480px;
+  max-width: 480px;
+}
+
+.experience {
+  background: url('../img/about/bg-dark.png') no-repeat 50% 50%;
+  background-size: auto 266px;
+}
+
+.experience-container {
+  display: flex;
+  align-items: center;
+}
+
+.experience-img {
+  display: flex;
+  align-items: center;
+  flex: 1 1 38%;
+  max-width: 38%;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.experience-text {
+  flex: 1 1 60%;
+  max-width: 60%;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 34px;
+  padding: 0 30px;
+}
+
+.about-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 110px 20px 70px;
+}
+
+.about-services-title {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  color: #323232;
+  margin-bottom: 7px;
+}
+
+.about-services-descr {
+  font-size: 30px;
+  color: #787878;
+  font-weight: 300;
+  margin-right: 70px;
+  margin-bottom: 35px;
+}
+
+.about-services-list {
+  width: 100%;
+  max-width: 750px;
+}
+
+.about-services-item {
+  padding-left: 115px;
+  background: no-repeat 0% 0%;
+  min-height: 90px;
+  margin-bottom: 45px;
+}
+
+.about-services-item b {
+  display: block;
+  color: #323232;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.about-services-item p {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+  color: #787878;
+}
+
+.hand-icon {
+  background-image: url(../img/about/hand-icon.png);
+}
+
+.list-icon {
+  background-image: url(../img/about/list-icon.png);
+}
+
+.search-icon {
+  background-image: url(../img/about/search-icon.png);
+}
+
+@media (max-width: 1275px) {
+  .estimate,
+  .experience-text {
+    font-size: 30px;
+  }
+
+  .legal-features-caption {
+    font-size: 26px;
+  }
+
+  .about-services {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about {
+    padding: 35px 0 0;
+  }
+
+  .about-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .about-container .about-text-left {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+
+  p br, .about-text-left br {
+    display: none;
+  }
+
+  .estimate, .experience-text {
+    font-size: 26px;
+  }
+
+  .ad-small-text {
+    font-size: 18px;
+  }
+
+  .ad-big-text {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .confidentiality-list {
+    flex-wrap: wrap;
+  }
+
+  .confidentiality-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding-right: 0;
+    min-height: 120px;
+  }
+
+  .confidentiality {
+    padding: 55px 0 25px;
+  }
+
+  .legal-features-container {
+    flex-direction: column;
+  }
+
+  .legal-features-text {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .legal-features-img {
+    flex: none;
+    width: 100%;
+  }
+
+  .legal-features {
+    padding: 25px 0;
+  }
+
+  .estimate, .experience-text {
+    font-size: 20px;
+  }
+
+  .experience {
+    background-size: auto 166px;
+  }
+
+  .about-services {
+    padding: 20px 20px 0;
+  }
+
+  .about-services-title {
+    font-size: 24px;
+  }
+
+  .about-services-descr {
+    font-size: 24px;
+    margin-right: 0;
+  }
+
+  .about-services-item b {
+    font-size: 20px;
+  }
+
+  .about-services-item {
+    margin-bottom: 25px;
+  }
+
+  .partnership {
+    font-size: 26px;
+    height: auto;
+    padding: 45px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .confidentiality-title {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .confidentiality {
+    padding: 35px 0;
+  }
+
+  .confidentiality-list {
+    padding-left: 0;
+  }
+
+  .confidentiality-item {
+    padding-right: 0;
+    background-size: auto 60px;
+    padding-left: 80px;
+    font-size: 16px;
+  }
+
+  .experience {
+    background-size: auto 140px;
+  }
+
+  .about-services-item {
+    background-size: auto 60px;
+    padding-left: 80px;
+  }
+
+  .about-services-item b {
+    font-size: 18px;
+  }
+
+  .about-services-item p {
+    font-size: 16px;
+  }
+
+  .about-services-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .about-services-descr {
+    font-size: 18px;
+  }
+
+  .ad-placement-container,
+  .estimate-container {
+    flex-direction: column;
+  }
+
+  .about-text-left,
+  .about-img-right {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 567px) {
+  .experience-img {
+    display: none;
+  }
+
+  .experience-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  .about-clients-title {
+    font-size: 24px;
+  }
+
+  .about-logo {
+    margin-right: 0;
+    padding: 0 60px 0 40px;
+  }
+
+  .about-services-item {
+    background-size: auto 45px;
+    padding-left: 60px;
+  }
+}

@@ -1,0 +1,409 @@
+.card-container {
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.card-details {
+  flex: 1 1 630px;
+  max-width: 630px;
+}
+
+.card-title {
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card-num {
+  padding: 3px 8px;
+  background-color: #009900;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.card-slider {
+  margin-bottom: 25px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card p {
+  font-size: 15px;
+  margin: 0 0 5px;
+}
+
+.card-info {
+  flex: 1;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.card-info-price {
+  font-weight: 700;
+  font-size: 30px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.card-info-row {
+  display: flex;
+  padding: 12px 0;
+}
+
+.small-pad {
+  padding: 5px 0 10px;
+}
+
+.card-info-row-union {
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.card-info-row-separator {
+  border: 0;
+  margin: 7px 0 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card-info-cell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding-left: 40px;
+  font-size: 13px;
+}
+
+.no-pad {
+  padding-left: 0px;
+}
+
+.card-info-row-union .card-info-cell {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.card-info-cell-name {
+  color: #797979;
+}
+
+.card-info-cell-value {
+  color: #333333;
+}
+
+.card-info-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  background: no-repeat left center;
+}
+
+.icon-floor {
+  background-image: url('../img/card/floor.png');
+}
+
+.icon-conditions {
+  background-image: url('../img/card/conditions.png');
+}
+
+.icon-dining-room {
+  background-image: url('../img/card/dining-room.png');
+}
+
+.icon-furniture {
+  background-image: url('../img/card/furniture.png');
+}
+
+.icon-outfit {
+  background-image: url('../img/card/outfit.png');
+}
+
+.icon-elec {
+  background-image: url('../img/card/elec.png');
+}
+
+.icon-roof {
+  background-image: url('../img/card/roof.png');
+}
+
+.icon-volume {
+  background-image: url('../img/card/volume.png');
+}
+
+.icon-size {
+  background-image: url('../img/card/size.png');
+}
+
+.icon-fin {
+  background-image: url('../img/card/fin.png');
+}
+
+.card-info-subtitle {
+  position: relative;
+  padding-left: 40px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 7px;
+}
+
+.card-profits-list {
+  display: flex;
+  border: 2px solid #efefef;
+  padding: 17px 10px;
+  margin-top: 25px;
+}
+
+.card-profits-item {
+  font-size: 11px;
+  color: #666666;
+  background: no-repeat 0 50%;
+}
+
+.icon-plus-1 {
+  background-image: url('../img/card/plus-1.png');
+  padding-left: 50px;
+}
+
+.icon-plus-2 {
+  background-image: url('../img/card/plus-2.png');
+  padding-left: 65px;
+  background-position-x: 0;
+}
+
+.icon-plus-3 {
+  background-image: url('../img/card/plus-3.png');
+  padding-left: 70px;
+}
+
+.card-call-order {
+  position: absolute;
+  right: -105px;
+  top: 50%;
+  margin-top: -120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 65px;
+  width: 280px;
+  background-color: #009900;
+  color: #ffffff;
+  font-size: 14px;
+  transform: rotate(-90deg);
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.card-call-order b {
+  font-size: 14px;
+}
+
+.card-mobile-show,
+.card-info-show,
+.card-hidden {
+  display: none;
+}
+
+@media (max-width: 1275px) {
+  body .card-page {
+    background-size: auto 100%;
+  }
+
+  .card-container {
+    justify-content: space-between;
+  }
+
+  .card-details {
+    padding: 0 20px;
+  }
+
+  .card-info {
+    flex: none;
+    width: 100%;
+  }
+
+  .card-info-row {
+    flex-wrap: wrap;
+  }
+
+  .card-info-cell {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card-container {
+    flex-wrap: wrap;
+    padding: 45px 0;
+  }
+
+  .card-details {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .card-call-order {
+    top: auto;
+    margin-top: 0;
+    bottom: 100%;
+    margin-bottom: -280px;
+  }
+
+  .card-info-cell {
+    flex: 1 1 50%;
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+
+  .card-info {
+    display: none;
+    max-width: 450px;
+    padding: 0;
+    margin: 30px 0;
+  }
+
+  .card-info.card-info-show {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-details {
+    padding-right: 90px;
+  }
+
+  .card-profits-list {
+    flex-wrap: wrap;
+  }
+
+  .card-profits-item {
+    flex-wrap: wrap;
+  }
+
+  .card-profits-item {
+    flex: 1 1 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+    min-height: 20px;
+  }
+
+  .card-profits-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 567px) {
+  .card-container {
+    padding: 25px 0;
+  }
+
+  .card-call-order {
+    display: none;
+  }
+
+  .card-info-cell {
+    flex: 1 1 50%;
+    max-width: 50%;
+    margin-bottom: 5px;
+  }
+
+  .card-info-cell:first-child {
+    padding-right: 5px;
+  }
+
+  .small-pad .card-info-cell {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .card-details {
+    padding-right: 20px;
+  }
+
+  .card-slider {
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .card-num {
+    padding: 1px 5px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .card-mobile-hidden {
+    display: none;
+  }
+
+  .card-mobile-show {
+    display: flex;
+  }
+
+  .card-info {
+    max-width: 100%;
+    margin: 20px 0 0;
+  }
+
+  .card-profits-list {
+    width: 100%;
+    margin: 0 5px;
+  }
+
+  .card-profits-item {
+    max-width: 100%;
+  }
+
+  .card-union-mobile {
+    display: inline-flex;
+    width: 49%;
+    flex-direction: column;
+  }
+
+  .card-union-mobile .card-info-cell {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .card-union-mobile .card-info-row {
+    margin: 0;
+  }
+
+  .card-union-mobile.card-info-row .card-info-cell {
+    flex: none;
+    padding-left: 30px;
+    padding-right: 0;
+  }
+
+  .card-call-order-button {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    background-color: #5ab85c;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s background-color linear;
+    margin: 20px;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+

@@ -1,0 +1,127 @@
+.services-types {
+  padding: 85px 0;
+}
+
+.services-types-list {
+  display: flex;
+}
+
+.services-type {
+  position: relative;
+  display: flex;
+  flex: 1;
+  height: 215px;
+  align-items: center;
+  background: no-repeat 50% 50%;
+  background-size: cover;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.services-type:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.48);
+  transition: 0.4s background-color linear;
+}
+
+.services-type:hover:before {
+  background-color: rgba(119, 173, 47, 0.69);
+}
+
+.services-type-icon {
+  position: relative;
+  flex: none;
+  width: 130px;
+  height: 100%;
+  background: no-repeat 50% 50%;
+  background-size: 120px auto;
+  margin: auto 20px;
+}
+
+.services-type-title {
+  position: relative;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.rent.services-type-icon {
+  width: 100px;
+  margin-right: 35px;
+  background-image: url('../img/types/icon-1.png');
+}
+
+.pass.services-type-icon {
+  background-image: url('../img/types/icon-2.png');
+  margin: 0 30px;
+}
+
+.rent-space {
+  background-image: url('../img/types/type.png');
+}
+
+.pass-space {
+  background-image: url('../img/types/type.png');
+}
+
+@media (max-width: 1275px) {
+  .services-type-icon {
+    margin: 0 20px;
+    width: 90px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .services-type-title {
+    font-size: 18px;
+  }
+
+  .services-types {
+    padding: 45px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-types-list {
+    flex-wrap: wrap;
+  }
+
+  .services-types {
+    padding: 45px 0 75px;
+  }
+
+  .services-type-title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .services-type-title br {
+    display: none;
+  }
+
+  .services-type-icon,
+  .pass.services-type-icon,
+  .rent.services-type-icon {
+    margin: auto 15px auto 5px;
+    background-size: 95px auto;
+  }
+
+  .services-type {
+    height: 170px;
+  }
+}
+
+@media (max-width: 567px) {
+  .services-types {
+    padding: 45px 0 35px;
+  }
+
+  .services-type {
+    flex: none;
+    width: 100%;
+  }
+}

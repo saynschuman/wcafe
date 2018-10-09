@@ -1,0 +1,160 @@
+.services {
+  padding: 70px 0 85px;
+}
+
+.services-list {
+  display: flex;
+}
+
+.services-subsection {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.services-subsection.biz {
+  flex: none;
+  width: 260px;
+}
+
+.services-subsection-title {
+  font-size: 18px;
+  font-weight: 300;
+  height: 45px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.services-item {
+  position: relative;
+  flex: 1;
+  background: no-repeat 0 50%;
+  background-size: cover;
+  border: 1px solid #ffffff;
+  padding: 15px;
+  cursor: pointer;
+  min-height: 125px;
+  height: 125px;
+}
+
+.services-item:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 25, 24, 0.26);
+  content: '';
+  transition: background-color 0.45s ease-in-out;
+}
+
+.services-item:hover:before {
+  background-color: rgba(26, 25, 24, 0.62);
+}
+
+.services-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.05) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.services-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  transform: translate3d(0, 40px, 0);
+  transition: transform 0.35s;
+}
+
+.services-item:hover .services-title {
+  transform: translate3d(0, 0, 0);
+}
+
+.services-descr {
+  color: rgba(255, 255, 255, 0.85);
+  opacity: 0;
+  height: 40px;
+  font-size: 14px;
+  padding-top: 8px;
+  font-weight: 300;
+  transform: translate3d(0, 40px, 0);
+  transition: opacity 0.2s, transform 0.35s;
+}
+
+.services-item:hover .services-descr {
+  opacity: 1;
+  height: auto;
+  transition-delay: 0.05s;
+  transition-duration: 0.35s;
+  transform: translate3d(0, 0, 0);
+}
+
+.place-for-restaurant {
+  background-image: url('../img/services/rent1.png');
+}
+
+.restaurant-active {
+  background-image: url('../img/services/rent2.png');
+}
+
+.dining-rooms {
+  background-image: url('../img/services/rent3.png');
+}
+
+.place-restaurant-active {
+  background-image: url('../img/services/place1.png');
+}
+
+.place-free {
+  background-image: url('../img/services/place2.png');
+}
+
+.biz-buy {
+  background-image: url('../img/services/biz1.jpg');
+}
+
+@media (max-width: 1000px) {
+  .services-list {
+    flex-wrap: wrap;
+  }
+
+  .services-subsection.biz {
+    width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+  }
+
+  .biz-buy {
+    background-image: url('../img/services/biz.png');
+  }
+
+  .services-descr {
+    min-height: 45px;
+  }
+
+  .services-subsection {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-subsection {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .services {
+    padding: 45px 0;
+  }
+}

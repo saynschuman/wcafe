@@ -1,0 +1,37 @@
+.clients {
+  margin-bottom: 95px;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 16.66%;
+  width: 16.66%;
+  height: 130px;
+}
+
+@media (max-width: 1000px) {
+  .clients-item {
+    flex: 1 1 25%;
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  .clients {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 567px) {
+  .clients-item {
+    flex: 1 1 50%;
+    width: 50%;
+  }
+}
